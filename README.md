@@ -1,52 +1,66 @@
 # SQL Basics Study Plan
 
 ## Goals
-- Understand basic SQL syntax and theory.
-- Practice writing SQL queries for common database operations.
-- Learn how to use SQL for data retrieval, filtering, sorting, and pagination.
+- Understand basic SQL syntax and operations.
+- Learn to query data from single tables using SELECT, WHERE, ORDER BY, and LIMIT.
+- Master joining tables using INNER JOIN and LEFT JOIN.
+- Aggregate data using GROUP BY, SUM, COUNT, and HAVING.
+- Use subqueries to filter data based on complex conditions.
 
 ## Day-by-Day Schedule
 
 ### Day 1
-**Topics:**
-- SQL Theory & Syntax Review
-- SELECT statement, Aliases
-- WHERE clause, ORDER BY clause
-- DISTINCT keyword, LIMIT clause
-- LIKE/ILIKE operators
-- Pagination using LIMIT and OFFSET
-- BETWEEN and IN operators
-- IS NULL condition
-
-**Exercises:**
-1. [Theory & Syntax Review](day1/01_theory_syntax_review.sql)
-2. [Break](day1/02_break.sql)
-3. [Hands-on Exercises](day1/03_hands_on_exercises.sql)
-4. [Select Aliases](day1/01_select_aliases.sql)
-5. [Where and Order](day1/02_where_and_order.sql)
-6. [Distinct Order](day1/03_distinct_order.sql)
-7. [Limit Top 5](day1/04_limit_top5.sql)
-8. [Like ILike](day1/05_like_ilike.sql)
-9. [Pagination](day1/06_pagination.sql)
-10. [Between In](day1/07_between_in.sql)
-11. [Is Null](day1/08_is_null.sql)
-12. [Review Flashcards](day1/12_review_flashcards.sql)
+- **Morning**
+  - Introduction to SQL
+  - SELECT statement
+  - Practice Queries:
+    - `day1_01_select_all_customers.sql`
+    - `day1_02_select_name_city.sql`
+- **Afternoon**
+  - WHERE clause
+  - Practice Queries:
+    - `day1_03_where_city.sql`
+    - `day1_04_where_amount.sql`
+    - `day1_05_where_like.sql`
+- **Evening**
+  - ORDER BY and LIMIT
+  - Practice Queries:
+    - `day1_06_orderby_limit.sql`
+    - `day1_07_orderby_name.sql`
 
 ### Day 2
-**Topics:**
-- SQL Theory & Syntax Review
-- Advanced SQL concepts (to be covered in future days)
+- **Morning**
+  - JOINs (INNER JOIN, LEFT JOIN)
+  - Practice Queries:
+    - `day2_01_inner_join.sql`
+    - `day2_02_left_join.sql`
+- **Afternoon**
+  - GROUP BY, SUM, COUNT
+  - Practice Queries:
+    - `day2_03_groupby_sum.sql`
+    - `day2_04_groupby_count.sql`
+- **Evening**
+  - HAVING clause, Subqueries
+  - Practice Queries:
+    - `day2_05_having.sql`
+    - `day2_06_subquery.sql`
 
-**Exercises:**
-1. [Theory & Syntax Review](day2/13_theory_syntax_review.sql)
-2. [Break](day2/14_break.sql)
+## Exercise List
+- [day1_01_select_all_customers.sql](solutions/day1_01_select_all_customers.sql)
+- [day1_02_select_name_city.sql](solutions/day1_02_select_name_city.sql)
+- [day1_03_where_city.sql](solutions/day1_03_where_city.sql)
+- [day1_04_where_amount.sql](solutions/day1_04_where_amount.sql)
+- [day1_05_where_like.sql](solutions/day1_05_where_like.sql)
+- [day1_06_orderby_limit.sql](solutions/day1_06_orderby_limit.sql)
+- [day1_07_orderby_name.sql](solutions/day1_07_orderby_name.sql)
+- [day2_01_inner_join.sql](solutions/day2_01_inner_join.sql)
+- [day2_02_left_join.sql](solutions/day2_02_left_join.sql)
+- [day2_03_groupby_sum.sql](solutions/day2_03_groupby_sum.sql)
+- [day2_04_groupby_count.sql](solutions/day2_04_groupby_count.sql)
+- [day2_05_having.sql](solutions/day2_05_having.sql)
+- [day2_06_subquery.sql](solutions/day2_06_subquery.sql)
 
 ## How to Run the Solutions
-1. Ensure you have a SQL environment set up (e.g., PostgreSQL, MySQL).
-2. Create the necessary tables (`customers`, `products`, `orders`) with sample data.
-3. Execute each SQL file in your SQL environment to see the results.
-
-Example:
-```bash
-psql -U your_username -d your_database -f day1/01_select_aliases.sql
-```
+1. Clone the repository.
+2. Open each `.sql` file in your SQL editor or IDE.
+3. Execute the queries against your database.
