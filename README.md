@@ -3,35 +3,41 @@
 ## Goals
 - Understand basic SQL syntax and operations.
 - Learn to filter, sort, and limit data using SQL.
-- Master joining tables and using aggregate functions.
-- Practice writing complex queries with subqueries and grouping.
+- Master joining tables and using subqueries.
+- Practice writing complex queries combining multiple concepts.
 
-## Day 1 Schedule
+## Day 1: Basic SQL Queries
 ### Topics
 - SELECT statement
-- Filtering with WHERE clause
-- Sorting with ORDER BY clause
+- Filtering data with WHERE clause
+- Sorting data with ORDER BY clause
 - Limiting results with LIMIT and OFFSET
-- Combining multiple clauses
+- Combining conditions and clauses
 
 ### Exercises
 1. **Select Columns**
    - [day1/0001_select_columns.sql](day1/0001_select_columns.sql)
-2. **Where Filter**
+2. **Filter Data with WHERE**
    - [day1/0002_where_filter.sql](day1/0002_where_filter.sql)
-3. **Order By**
+3. **Sort Data with ORDER BY**
    - [day1/0003_order_by.sql](day1/0003_order_by.sql)
-4. **Limit Offset**
+4. **Limit and Offset Results**
    - [day1/0004_limit_offset.sql](day1/0004_limit_offset.sql)
 5. **Combined Basics**
    - [day1/0005_combined_basics.sql](day1/0005_combined_basics.sql)
 
-## Day 2 Schedule
+### How to Run Solutions
+1. Ensure you have a SQL environment set up (e.g., MySQL, PostgreSQL).
+2. Create the necessary tables (`employees`, `departments`) with appropriate schema.
+3. Execute each SQL file in your SQL environment.
+
+## Day 2: Intermediate SQL Queries
 ### Topics
-- Joining tables with INNER JOIN and LEFT JOIN
-- Grouping data with GROUP BY
-- Using HAVING clause
-- Writing subqueries
+- Joining tables (INNER JOIN, LEFT JOIN)
+- Grouping data with GROUP BY clause
+- Using HAVING clause for filtering groups
+- Writing subqueries (scalar, IN)
+- Combining advanced concepts
 
 ### Exercises
 1. **Inner Join**
@@ -40,17 +46,14 @@
    - [day2/0007_left_join.sql](day2/0007_left_join.sql)
 3. **Group By**
    - [day2/0008_group_by.sql](day2/0008_group_by.sql)
-4. **Having**
+4. **Having Clause**
    - [day2/0009_having.sql](day2/0009_having.sql)
-5. **Subquery Scalar**
+5. **Scalar Subquery**
    - [day2/0010_subquery_scalar.sql](day2/0010_subquery_scalar.sql)
-6. **Subquery In**
+6. **Subquery with IN**
    - [day2/0011_subquery_in.sql](day2/0011_subquery_in.sql)
 7. **Combined Intermediate**
    - [day2/0012_combined_intermediate.sql](day2/0012_combined_intermediate.sql)
 
-## How to Run the Solutions
-1. Ensure you have a SQL database set up (e.g., MySQL, PostgreSQL).
-2. Create the necessary tables (`employees`, `departments`) with appropriate columns.
-3. Populate the tables with sample data.
-4. Execute each SQL query file in your SQL environment to see the results.
+### How to Run Solutions
+Follow the same steps as Day 1.
