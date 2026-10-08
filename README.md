@@ -2,65 +2,58 @@
 
 ## Goals
 - Understand basic SQL syntax and operations.
-- Learn to query data from single tables using SELECT, WHERE, ORDER BY, and LIMIT.
-- Master joining tables using INNER JOIN and LEFT JOIN.
-- Aggregate data using GROUP BY, SUM, COUNT, and HAVING.
-- Use subqueries to filter data based on complex conditions.
+- Practice writing SQL queries using common clauses.
+- Learn to filter, sort, and limit query results.
 
 ## Day-by-Day Schedule
 
 ### Day 1
-- **Morning**
-  - Introduction to SQL
-  - SELECT statement
-  - Practice Queries:
-    - `day1_01_select_all_customers.sql`
-    - `day1_02_select_name_city.sql`
-- **Afternoon**
-  - WHERE clause
-  - Practice Queries:
-    - `day1_03_where_city.sql`
-    - `day1_04_where_amount.sql`
-    - `day1_05_where_like.sql`
-- **Evening**
-  - ORDER BY and LIMIT
-  - Practice Queries:
-    - `day1_06_orderby_limit.sql`
-    - `day1_07_orderby_name.sql`
+**Topics Covered:**
+- SELECT
+- FROM
+- WHERE
+- ORDER BY
+- LIMIT
 
-### Day 2
-- **Morning**
-  - JOINs (INNER JOIN, LEFT JOIN)
-  - Practice Queries:
-    - `day2_01_inner_join.sql`
-    - `day2_02_left_join.sql`
-- **Afternoon**
-  - GROUP BY, SUM, COUNT
-  - Practice Queries:
-    - `day2_03_groupby_sum.sql`
-    - `day2_04_groupby_count.sql`
-- **Evening**
-  - HAVING clause, Subqueries
-  - Practice Queries:
-    - `day2_05_having.sql`
-    - `day2_06_subquery.sql`
+**Exercises:**
+1. [SELECT](day1/01_select.sql)
+2. [FROM](day1/02_from.sql)
+3. [WHERE](day1/03_where.sql)
+4. [ORDER BY](day1/04_order_by.sql)
+5. [LIMIT](day1/05_limit.sql)
 
-## Exercise List
-- [day1_01_select_all_customers.sql](solutions/day1_01_select_all_customers.sql)
-- [day1_02_select_name_city.sql](solutions/day1_02_select_name_city.sql)
-- [day1_03_where_city.sql](solutions/day1_03_where_city.sql)
-- [day1_04_where_amount.sql](solutions/day1_04_where_amount.sql)
-- [day1_05_where_like.sql](solutions/day1_05_where_like.sql)
-- [day1_06_orderby_limit.sql](solutions/day1_06_orderby_limit.sql)
-- [day1_07_orderby_name.sql](solutions/day1_07_orderby_name.sql)
-- [day2_01_inner_join.sql](solutions/day2_01_inner_join.sql)
-- [day2_02_left_join.sql](solutions/day2_02_left_join.sql)
-- [day2_03_groupby_sum.sql](solutions/day2_03_groupby_sum.sql)
-- [day2_04_groupby_count.sql](solutions/day2_04_groupby_count.sql)
-- [day2_05_having.sql](solutions/day2_05_having.sql)
-- [day2_06_subquery.sql](solutions/day2_06_subquery.sql)
+**Solutions:**
+1. [Select All Columns](solutions/day1/01_select_all.sql)
+2. [Select Specific Columns with Aliases](solutions/day1/02_select_aliased.sql)
+3. [Filter with WHERE Equality](solutions/day1/03_where_equals.sql)
+4. [Filter with AND and IN Operator](solutions/day1/04_where_and_in.sql)
+5. [Filter with LIKE Pattern Matching](solutions/day1/05_where_like.sql)
+6. [Filter with BETWEEN on Dates](solutions/day1/06_where_between.sql)
+7. [Sort with ORDER BY DESC](solutions/day1/07_order_by_desc.sql)
+8. [Limit Results with LIMIT](solutions/day1/08_limit_top10.sql)
+9. [Filter with IS NULL](solutions/day1/09_where_is_null.sql)
 
 ## How to Run the Solutions
-1. Clone the repository.
-2. Open each `.sql` file in your SQL editor or IDE.
-3. Execute the queries against your database.
+1. Ensure you have a SQL environment set up (e.g., MySQL, PostgreSQL).
+2. Create an `employees` table with sample data.
+3. Execute each solution file in your SQL environment to see the results.
+
+**Sample Table Creation Script:**
+```sql
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE,
+    manager_id INT,
+    status VARCHAR(20)
+);
+
+INSERT INTO employees (id, name, department, salary, hire_date, manager_id, status) VALUES
+(1, 'John Doe', 'Sales', 50000.00, '2019-01-15', 3, 'Active'),
+(2, 'Jane Smith', 'Marketing', 55000.00, '2018-03-22', 3, 'Active'),
+(3, 'Alice Johnson', 'HR', 60000.00, '2017-07-10', NULL, 'Active'),
+(4, 'Bob Brown', 'IT', 65000.00, '2020-05-01', 5, 'Inactive'),
+(5, 'Charlie Davis', 'Finance', 70000.00, '2016-11-18', NULL, 'Active');
+```
