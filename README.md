@@ -2,58 +2,55 @@
 
 ## Goals
 - Understand basic SQL syntax and operations.
-- Practice writing SQL queries using common clauses.
-- Learn to filter, sort, and limit query results.
+- Learn to filter, sort, and limit data using SQL.
+- Master joining tables and using aggregate functions.
+- Practice writing complex queries with subqueries and grouping.
 
-## Day-by-Day Schedule
+## Day 1 Schedule
+### Topics
+- SELECT statement
+- Filtering with WHERE clause
+- Sorting with ORDER BY clause
+- Limiting results with LIMIT and OFFSET
+- Combining multiple clauses
 
-### Day 1
-**Topics Covered:**
-- SELECT
-- FROM
-- WHERE
-- ORDER BY
-- LIMIT
+### Exercises
+1. **Select Columns**
+   - [day1/0001_select_columns.sql](day1/0001_select_columns.sql)
+2. **Where Filter**
+   - [day1/0002_where_filter.sql](day1/0002_where_filter.sql)
+3. **Order By**
+   - [day1/0003_order_by.sql](day1/0003_order_by.sql)
+4. **Limit Offset**
+   - [day1/0004_limit_offset.sql](day1/0004_limit_offset.sql)
+5. **Combined Basics**
+   - [day1/0005_combined_basics.sql](day1/0005_combined_basics.sql)
 
-**Exercises:**
-1. [SELECT](day1/01_select.sql)
-2. [FROM](day1/02_from.sql)
-3. [WHERE](day1/03_where.sql)
-4. [ORDER BY](day1/04_order_by.sql)
-5. [LIMIT](day1/05_limit.sql)
+## Day 2 Schedule
+### Topics
+- Joining tables with INNER JOIN and LEFT JOIN
+- Grouping data with GROUP BY
+- Using HAVING clause
+- Writing subqueries
 
-**Solutions:**
-1. [Select All Columns](solutions/day1/01_select_all.sql)
-2. [Select Specific Columns with Aliases](solutions/day1/02_select_aliased.sql)
-3. [Filter with WHERE Equality](solutions/day1/03_where_equals.sql)
-4. [Filter with AND and IN Operator](solutions/day1/04_where_and_in.sql)
-5. [Filter with LIKE Pattern Matching](solutions/day1/05_where_like.sql)
-6. [Filter with BETWEEN on Dates](solutions/day1/06_where_between.sql)
-7. [Sort with ORDER BY DESC](solutions/day1/07_order_by_desc.sql)
-8. [Limit Results with LIMIT](solutions/day1/08_limit_top10.sql)
-9. [Filter with IS NULL](solutions/day1/09_where_is_null.sql)
+### Exercises
+1. **Inner Join**
+   - [day2/0006_inner_join.sql](day2/0006_inner_join.sql)
+2. **Left Join**
+   - [day2/0007_left_join.sql](day2/0007_left_join.sql)
+3. **Group By**
+   - [day2/0008_group_by.sql](day2/0008_group_by.sql)
+4. **Having**
+   - [day2/0009_having.sql](day2/0009_having.sql)
+5. **Subquery Scalar**
+   - [day2/0010_subquery_scalar.sql](day2/0010_subquery_scalar.sql)
+6. **Subquery In**
+   - [day2/0011_subquery_in.sql](day2/0011_subquery_in.sql)
+7. **Combined Intermediate**
+   - [day2/0012_combined_intermediate.sql](day2/0012_combined_intermediate.sql)
 
 ## How to Run the Solutions
-1. Ensure you have a SQL environment set up (e.g., MySQL, PostgreSQL).
-2. Create an `employees` table with sample data.
-3. Execute each solution file in your SQL environment to see the results.
-
-**Sample Table Creation Script:**
-```sql
-CREATE TABLE employees (
-    id INT PRIMARY KEY,
-    name VARCHAR(100),
-    department VARCHAR(50),
-    salary DECIMAL(10, 2),
-    hire_date DATE,
-    manager_id INT,
-    status VARCHAR(20)
-);
-
-INSERT INTO employees (id, name, department, salary, hire_date, manager_id, status) VALUES
-(1, 'John Doe', 'Sales', 50000.00, '2019-01-15', 3, 'Active'),
-(2, 'Jane Smith', 'Marketing', 55000.00, '2018-03-22', 3, 'Active'),
-(3, 'Alice Johnson', 'HR', 60000.00, '2017-07-10', NULL, 'Active'),
-(4, 'Bob Brown', 'IT', 65000.00, '2020-05-01', 5, 'Inactive'),
-(5, 'Charlie Davis', 'Finance', 70000.00, '2016-11-18', NULL, 'Active');
-```
+1. Ensure you have a SQL database set up (e.g., MySQL, PostgreSQL).
+2. Create the necessary tables (`employees`, `departments`) with appropriate columns.
+3. Populate the tables with sample data.
+4. Execute each SQL query file in your SQL environment to see the results.
